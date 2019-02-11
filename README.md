@@ -2,7 +2,7 @@
 
 ![ui](https://media.git.generalassemb.ly/user/6387/files/ac9a086c-9fd8-11e8-9e0d-52091e56436b)
 
-For this homework you'll be using the Open Weather API. You're going to be using react to display data from the API.
+For this homework you'll be using the Open Weather API. You're going to be using vanilla JS to display data from the API.
 
 ### Set up
 1. Fork and clone this repo
@@ -47,14 +47,16 @@ Now it's time to dynamically submit our form and insert a nicely formatted sub-s
 -  Inside `script.js` query select for the `form` and assign it to a variable
 -  add an event listener to the form for `submit` and use `preventDefault`
 -  Extract the value out of the text input and assign it to a variable
--  Using an `async` function that takes a city name as an argument, make an `axios` GET request to the weather api; use string interpolation to insert the city name and API key into the url.  Don't forget to `await` the response
+-  Using an `async` function that takes a city name as an argument, make an `axios` GET request to the weather
+api; use string interpolation to insert the city name and API key into the url.
+Don't forget to `await` the response.
 -  After parsing the response, use DOM manipulation to render the view from the mock up above.  
 
 
 Yay!
 ## 🚀 Completion looks like:
 
-Your app has multiple components and does the following things:
+Your app has an HTML file and a JavaScript file (with optional CSS) and does the following things:
 
 - Handles the zip code input from the user
 - Fetches data from the API when the zip code is submitted
@@ -62,15 +64,5 @@ Your app has multiple components and does the following things:
 - Renders that information on the page
 
 
-- **BONUS**: Include a button that converts the temperature from Fahrenheit to Celsius
+- **BONUS**: Include a button that converts the temperature from Celsius to Fahrenheit.  
 - **BONUS**: Change the styling of the page based on weather conditions. 
-- **BONUS**: Include the sunrise and sunset times (hint: maybe [Moment.js](https://momentjs.com/) will be helpful!) and some information about humidity, atmospheric pressure, etc.
-- **BONUS**: Deploy your app on GH-pages (check the Create React App docs).
-
-
-### To be thinking on
-
-- Put a debugger into your HTTP request (axios call) to get a sense of what's happening. 
-- What components should your app have?
-- What components (if any) need state?
-- How/when would you change state?
