@@ -2,7 +2,7 @@
 
 ![ui](https://media.git.generalassemb.ly/user/6387/files/ac9a086c-9fd8-11e8-9e0d-52091e56436b)
 
-For this homework you'll be using the Open Weather API. You're going to be using vanilla JS to display data from the API.
+For this homework you'll be using the Open Weather API. You're going to be using **vanilla JS** to display data from the API.
 
 ### Set up
 1. Fork and clone this repo
