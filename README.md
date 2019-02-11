@@ -47,8 +47,8 @@ Now it's time to dynamically submit our form and insert a nicely formatted sub-s
 -  Inside `script.js` query select for the `form` and assign it to a variable
 -  add an event listener to the form for `submit` and use `preventDefault`
 -  Extract the value out of the text input and assign it to a variable
--  Using an `async` function that takes a city name as an argument, make an `axios` GET request to the weather
-api; use string interpolation to insert the city name and API key into the url.
+-  Using an `async` function that takes a zip code as an argument, make an `axios` GET request to the weather
+api; use string interpolation to insert the zip code and API key into the url.
 Don't forget to `await` the response.
 -  After parsing the response, use DOM manipulation to render the view from the mock up above.  
 
