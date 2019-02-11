@@ -64,5 +64,9 @@ Your app has an HTML file and a JavaScript file (with optional CSS) and does the
 - Renders that information on the page
 
 
-- **BONUS**: Include a button that converts the temperature from Celsius to Fahrenheit.  
+- **BONUS**: Include a button that converts the temperature from Fahrenheit to Celsius. Or vice versa.  
 - **BONUS**: Change the styling of the page based on weather conditions. 
+```
+
+#### If you get stuck, refer to the [planet demo](https://git.generalassemb.ly/wdi-nyc-bananas/planet-demo) from today.  
+
