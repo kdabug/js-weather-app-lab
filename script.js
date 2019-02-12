@@ -10,7 +10,7 @@ const renderWeather = data => {
   const node = document.createElement("div");
   node.innerHTML = `
     <h3>${data.name}</h3> <h1>${data.main.temp}</h1><h2>Look for ${
-    data.weather.description
+    data.weather["0"].description
   }</h2><div id='min-max'><div id='min'><h3>min</h3><h2>${
     data.main.temp_min
   }</h2></div><h3></h3><div id='max'><h3>max</h3><h2>${
@@ -25,8 +25,10 @@ const renderWeather = data => {
 // };
 
 const fetchWeather = async (code, apiKey) => {
-  const resp = await axios(`${BASE_URL}zip=${code},us&appid=${apiKey}`);
-  console.log(`This is fetch weather ${resp.data}`);
+  const resp = await axios(
+    `${BASE_URL}zip=${code},us&appid=${apiKey}&units=imperial`
+  );
+  console.log(resp.data);
   renderWeather(resp.data);
 };
 
