@@ -9,13 +9,13 @@ console.log(zipCode);
 const renderWeather = data => {
   const node = document.createElement("div");
   node.innerHTML = `
-    <h3>${data.name}</h3> <h1>${data.main.temp}</h1><h2>Look for ${
-    data.weather["0"].description
-  }</h2><div id='min-max'><div id='min'><h3>min</h3><h2>${
-    data.main.temp_min
-  }</h2></div><h3></h3><div id='max'><h3>max</h3><h2>${
-    data.main.temp_max
-  }</h2></div><h3></h3></div>`;
+    <div class='added-info'>
+    <div id='name'><h3>${data.name}</h3></div>
+    <div id='main-temp'><h1>${data.main.temp}</h1></div>
+  <h2>Look for ${data.weather["0"].description}</h2>
+  <div id='min-max'>
+  <div id='min'><h3>min</h3><h2>${data.main.temp_min}</h2></div>
+  <div id='max'><h3>max</h3><h2>${data.main.temp_max}</h2></div></div></div>`;
   document.body.appendChild(node);
 };
 
@@ -43,4 +43,5 @@ submitButton.addEventListener("click", ev => {
   const appID = document.querySelector('input[type="hidden"]').value;
   console.log(zipCode, appID);
   fetchWeather(zipCode, appID);
+  form.style.display = "none";
 });

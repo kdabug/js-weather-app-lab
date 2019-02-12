@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <title>Weather Site</title>
   </head>
   <body>
-    <h1>Weather Forecast</h1>
+    <div class='title'><h1>Weather Forecast</h1></div>
+    <div class='inputs'>
     <form action="#" method="GET" accept-charset="utf-8">
-      <label for="q">ZipCode</label>
-      <input type="number" name="q" id="zip" value="" />
+      <input
+        type="number"
+        name="q"
+        id="zip"
+        value=""
+        placeholder="Enter Zip Code"
+      />
       <input
         type="hidden"
         name="appid"
         id="appid"
         value="053a7650f87c76d09503df6648d5a922"
       />
-      <input type="submit" name="" id="" value="Submit" />
+      <input type="submit" name="" id="submit" value="Submit" />
+    </div>
     </form>
   </body>
 </html>

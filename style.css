@@ -1,0 +1,67 @@
+body {
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+form {
+  display: flex;
+}
+.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+}
+.inputs {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  align-content: center;
+  justify-content: center;
+}
+
+#zip {
+}
+#appid {
+}
+#submit {
+}
+
+.added-info {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  flex-direction: column;
+}
+#min {
+  /* display: block; */
+}
+#max {
+  /* display: block; */
+}
+#min-max {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  justify-content: space-around;
+  border: 1px solid purple;
+  align-items: center;
+}
