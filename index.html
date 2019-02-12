@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js" charset="utf-8"></script>
+    <title>Planet Site</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Weather Forecast</h1>
+    <form
+      action="http://api.openweathermap.org/data/2.5/weather?"
+      method="GET"
+      accept-charset="utf-8"
+    >
+      <label for="q">ZipCode</label>
+      <input type="number" name="q" id="zip" value="" />
+
+      <input
+        type="hidden"
+        name="appid"
+        id="appid"
+        value="22c1aec79ff9c4e0b3e13c08f74f6080"
+      />
+
+      <input type="submit" name="" id="" value="Submit" />
+    </form>
+  </body>
 </html>
